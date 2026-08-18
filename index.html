@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KConnect Education – Du học Hàn Quốc trọn gói</title>
-<meta name="description" content="Trung tâm tư vấn du học Hàn Quốc uy tín – Hỗ trợ chọn trường, xin học bổng, luyện TOPIK, visa D-4/D-2 trọn gói cho học sinh, sinh viên Việt Nam.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>KConnect Education – 한국 유학 원스톱 지원</title>
+<meta name="description" content="믿을 수 있는 한국 유학 컨설팅 센터 – 학교 선택, 장학금 신청, TOPIK 대비, D-4/D-2 비자까지 원스톱으로 지원합니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
   :root{
     --navy:#12235c;
@@ -32,10 +31,11 @@
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    font-family:'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family:'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
     color:var(--ink);
     background:var(--bg);
-    line-height:1.6;
+    line-height:1.65;
+    word-break:keep-all;
     -webkit-font-smoothing:antialiased;
   }
   img{max-width:100%;display:block;}
@@ -45,12 +45,12 @@
   section{position:relative;}
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
-    font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    font-size:13px;font-weight:700;letter-spacing:.02em;
     color:var(--coral);background:var(--bg-soft-2);
     padding:7px 16px;border-radius:999px;margin-bottom:18px;
   }
-  h1,h2,h3,h4{font-weight:800;color:var(--navy);line-height:1.22;}
-  h2{font-size:clamp(26px,4vw,38px);}
+  h1,h2,h3,h4{font-weight:800;color:var(--navy);line-height:1.32;}
+  h2{font-size:clamp(25px,3.6vw,36px);}
   h3{font-size:19px;}
   .lede{color:var(--slate);font-size:17px;max-width:640px;}
   .center{text-align:center;margin-left:auto;margin-right:auto;}
@@ -84,10 +84,10 @@
     display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;font-weight:800;
     flex-shrink:0;
   }
-  .nav-links{display:flex;gap:30px;font-weight:600;font-size:14.5px;color:var(--slate);}
+  .nav-links{display:flex;gap:28px;font-weight:600;font-size:14.5px;color:var(--slate);white-space:nowrap;}
   .nav-links a:hover{color:var(--blue-2);}
   .nav-cta{display:flex;align-items:center;gap:14px;}
-  .nav-phone{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--navy);}
+  .nav-phone{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--navy);white-space:nowrap;}
   .burger{display:none;background:none;border:none;cursor:pointer;padding:6px;}
   .burger span{display:block;width:24px;height:2.5px;background:var(--navy);margin:5px 0;border-radius:2px;}
 
@@ -100,9 +100,9 @@
     padding:76px 0 90px;overflow:hidden;
   }
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
-  .hero h1{font-size:clamp(32px,4.6vw,50px);margin-bottom:20px;}
+  .hero h1{font-size:clamp(30px,4.2vw,46px);margin-bottom:20px;}
   .hero h1 span{color:var(--coral);}
-  .hero p.lede{margin-bottom:32px;font-size:18px;}
+  .hero p.lede{margin-bottom:32px;font-size:17.5px;}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px;}
   .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
   .stat b{display:block;font-size:26px;color:var(--navy);font-weight:800;}
@@ -135,11 +135,11 @@
   /* TRUST BAR */
   .trustbar{padding:26px 0;border-bottom:1px solid var(--line);border-top:1px solid var(--line);}
   .trustbar .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
-  .trustbar p{font-size:13px;font-weight:700;color:var(--slate-light);text-transform:uppercase;letter-spacing:.05em;}
+  .trustbar p{font-size:13px;font-weight:700;color:var(--slate-light);letter-spacing:.02em;}
   .trust-logos{display:flex;gap:28px;flex-wrap:wrap;font-weight:700;color:var(--slate);font-size:14px;}
 
   /* SECTION HEAD */
-  .section-head{max-width:620px;margin-bottom:52px;}
+  .section-head{max-width:640px;margin-bottom:52px;}
   .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
 
   /* WHY */
@@ -208,8 +208,8 @@
     padding:52px 48px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:32px;
     box-shadow:var(--shadow);
   }
-  .banner h3{color:#fff;font-size:26px;margin-bottom:10px;}
-  .banner p{color:#c9d6ff;font-size:15px;max-width:460px;}
+  .banner h3{color:#fff;font-size:25px;margin-bottom:10px;}
+  .banner p{color:#c9d6ff;font-size:15px;max-width:480px;}
   .banner .btn-primary{background:linear-gradient(135deg,var(--gold),#ffce6b);color:var(--navy);box-shadow:0 14px 28px -10px rgba(245,185,66,.5);}
 
   /* TESTIMONIALS */
@@ -222,9 +222,9 @@
   .testi-card p.quote{font-size:14.5px;color:var(--slate);margin-bottom:20px;}
   .testi-person{display:flex;align-items:center;gap:12px;}
   .avatar{
-    width:44px;height:44px;border-radius:50%;
+    width:44px;height:44px;border-radius:50%;flex-shrink:0;
     background:linear-gradient(135deg,var(--coral),var(--gold));
-    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px;
   }
   .testi-person b{display:block;font-size:14px;color:var(--navy);}
   .testi-person span{font-size:12.5px;color:var(--slate-light);}
@@ -241,7 +241,7 @@
     background:#fff;border-radius:24px;padding:36px;box-shadow:var(--shadow);border:1px solid var(--line);
   }
   .form-card h3{margin-bottom:6px;}
-  .form-card > p{color:var(--slate);font-size:14px;margin-bottom:24px;}
+  .form-card > form > p{color:var(--slate);font-size:14px;margin-bottom:24px;}
   .field{margin-bottom:18px;}
   .field label{display:block;font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:7px;}
   .field input, .field select, .field textarea{
@@ -257,7 +257,7 @@
   .field.invalid input, .field.invalid select{border-color:var(--coral);}
   .field.invalid small.err{display:block;}
   .consent{display:flex;align-items:flex-start;gap:9px;font-size:12.5px;color:var(--slate);margin-bottom:22px;}
-  .consent input{margin-top:3px;}
+  .consent input{margin-top:4px;}
   .form-success{
     display:none;text-align:center;padding:36px 10px;
   }
@@ -280,8 +280,8 @@
   }
   .faq-item.open .faq-q .plus{transform:rotate(45deg);border-color:var(--blue-2);}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
-  .faq-item.open .faq-a{max-height:220px;}
-  .faq-a p{padding-top:14px;color:var(--slate);font-size:14.5px;max-width:660px;}
+  .faq-item.open .faq-a{max-height:260px;}
+  .faq-a p{padding-top:14px;color:var(--slate);font-size:14.5px;max-width:680px;}
 
   /* CTA STRIP */
   .cta-strip{
@@ -293,14 +293,14 @@
     box-shadow:var(--shadow);
   }
   .cta-inner h2{color:#fff;margin-bottom:14px;}
-  .cta-inner p{color:#ffe4e8;max-width:480px;margin:0 auto 30px;}
+  .cta-inner p{color:#ffe4e8;max-width:500px;margin:0 auto 30px;}
   .cta-inner .btn-outline{background:#fff;border:none;color:var(--coral);}
 
   /* FOOTER */
   footer{background:var(--navy);color:#c9d3f0;padding:64px 0 28px;}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:48px;}
   .foot-logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:18px;margin-bottom:14px;}
-  footer p{font-size:13.5px;color:#a6b2dd;line-height:1.7;}
+  footer p{font-size:13.5px;color:#a6b2dd;line-height:1.8;}
   footer h5{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.03em;}
   footer .fcol ul li{margin-bottom:11px;}
   footer .fcol ul li a{font-size:13.5px;color:#a6b2dd;}
@@ -353,18 +353,18 @@
       KConnect Education
     </a>
     <nav class="nav-links">
-      <a href="#why">Vì sao Hàn Quốc</a>
-      <a href="#services">Dịch vụ</a>
-      <a href="#process">Quy trình</a>
-      <a href="#universities">Trường đối tác</a>
-      <a href="#testimonials">Học viên nói gì</a>
-      <a href="#faq">Hỏi đáp</a>
+      <a href="#why">왜 한국인가</a>
+      <a href="#services">서비스</a>
+      <a href="#process">진행 절차</a>
+      <a href="#universities">파트너 대학</a>
+      <a href="#testimonials">수강생 후기</a>
+      <a href="#faq">자주 묻는 질문</a>
     </nav>
     <div class="nav-cta">
       <span class="nav-phone">📞 1900 0000</span>
-      <a href="#dangky" class="btn btn-primary">Đăng ký tư vấn</a>
+      <a href="#dangky" class="btn btn-primary">무료 상담 신청</a>
     </div>
-    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display = document.querySelector('.nav-links').style.display==='flex' ? 'none' : 'flex';">
+    <button class="burger" aria-label="메뉴" onclick="document.querySelector('.nav-links').style.display = document.querySelector('.nav-links').style.display==='flex' ? 'none' : 'flex';">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -373,18 +373,18 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">🇰🇷 Trung tâm tư vấn du học Hàn Quốc</span>
-      <h1>Chinh phục giấc mơ du học <span>Hàn Quốc</span> cùng KConnect</h1>
-      <p class="lede">Đồng hành cùng học sinh, sinh viên Việt Nam từ bước chọn trường, xin học bổng, luyện TOPIK đến hoàn tất visa D-4/D-2 — trọn gói, minh bạch, tận tâm.</p>
+      <span class="eyebrow">🇰🇷 한국 유학 전문 컨설팅 센터</span>
+      <h1>KConnect와 함께<br><span>한국 유학</span>의 꿈을 이루세요</h1>
+      <p class="lede">학교 선택부터 장학금 신청, TOPIK 대비, D-4/D-2 비자 발급까지 — 투명하고 정성스럽게 전 과정을 함께합니다.</p>
       <div class="hero-cta">
-        <a href="#dangky" class="btn btn-primary">Đăng ký tư vấn miễn phí</a>
-        <a href="#services" class="btn btn-outline">Xem dịch vụ</a>
+        <a href="#dangky" class="btn btn-primary">무료 상담 신청하기</a>
+        <a href="#services" class="btn btn-outline">서비스 살펴보기</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><b>1.200+</b><span>Học viên đã hỗ trợ</span></div>
-        <div class="stat"><b>98%</b><span>Tỷ lệ đậu visa</span></div>
-        <div class="stat"><b>40+</b><span>Trường đối tác</span></div>
-        <div class="stat"><b>8 năm</b><span>Kinh nghiệm tư vấn</span></div>
+        <div class="stat"><b>1,200+</b><span>지원한 학생 수</span></div>
+        <div class="stat"><b>98%</b><span>비자 승인률</span></div>
+        <div class="stat"><b>40+</b><span>파트너 대학</span></div>
+        <div class="stat"><b>8년</b><span>유학 상담 경력</span></div>
       </div>
     </div>
     <div class="hero-visual">
@@ -392,22 +392,22 @@
       <div class="hero-deco deco-2"></div>
       <div class="hero-card">
         <div class="hero-flag-strip"></div>
-        <h4>Hồ sơ của bạn đang ở đâu?</h4>
+        <h4>지금 어느 단계에 계신가요?</h4>
         <div class="mini-row">
           <div class="mini-ico ico-blue">🎓</div>
-          <div><p>Chọn trường & ngành học</p><small>Tư vấn 1:1 theo năng lực & ngân sách</small></div>
+          <div><p>학교 · 전공 선택</p><small>실력과 예산에 맞춘 1:1 상담</small></div>
         </div>
         <div class="mini-row">
           <div class="mini-ico ico-coral">📝</div>
-          <div><p>Hồ sơ & học bổng</p><small>Hỗ trợ soạn hồ sơ chuẩn Hàn Quốc</small></div>
+          <div><p>서류 준비 · 장학금</p><small>한국 대학 기준에 맞는 서류 작성 지원</small></div>
         </div>
         <div class="mini-row">
           <div class="mini-ico ico-gold">🛂</div>
-          <div><p>Visa D-4 / D-2</p><small>Tỷ lệ đậu visa 98%</small></div>
+          <div><p>D-4 / D-2 비자</p><small>비자 승인률 98%</small></div>
         </div>
         <div class="mini-row">
           <div class="mini-ico ico-blue">✈️</div>
-          <div><p>Bay sang Hàn Quốc</p><small>Đón sân bay & hỗ trợ chỗ ở</small></div>
+          <div><p>한국 출국</p><small>공항 픽업 및 숙소 지원</small></div>
         </div>
       </div>
     </div>
@@ -416,9 +416,9 @@
 
 <div class="trustbar">
   <div class="wrap">
-    <p>Được tin tưởng bởi học viên từ</p>
+    <p>이런 지역의 학생들이 함께하고 있습니다</p>
     <div class="trust-logos">
-      <span>Hà Nội</span><span>TP. Hồ Chí Minh</span><span>Đà Nẵng</span><span>Cần Thơ</span><span>Hải Phòng</span>
+      <span>하노이</span><span>호치민</span><span>다낭</span><span>껀터</span><span>하이퐁</span>
     </div>
   </div>
 </div>
@@ -426,39 +426,39 @@
 <section class="why" id="why">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Vì sao chọn Hàn Quốc</span>
-      <h2>Điểm đến du học lý tưởng cho người trẻ Việt Nam</h2>
+      <span class="eyebrow">왜 한국인가</span>
+      <h2>젊은 세대에게 가장 이상적인 유학 국가</h2>
     </div>
     <div class="why-grid">
       <div class="why-card">
         <div class="ico ico-blue">🏛️</div>
-        <h3>Chất lượng giáo dục hàng đầu châu Á</h3>
-        <p>Nhiều trường nằm trong bảng xếp hạng QS Asia, chương trình đào tạo gắn liền thực tiễn doanh nghiệp.</p>
+        <h3>아시아 최고 수준의 교육 환경</h3>
+        <p>QS 아시아 대학 랭킹에 다수의 대학이 이름을 올렸고, 산업 현장과 밀착된 실무형 커리큘럼을 운영합니다.</p>
       </div>
       <div class="why-card">
         <div class="ico ico-coral">💰</div>
-        <h3>Học bổng đa dạng, chi phí hợp lý</h3>
-        <p>Học bổng từ 30–100% học phí, chi phí sinh hoạt phù hợp với nhiều gia đình Việt Nam.</p>
+        <h3>다양한 장학금과 합리적인 비용</h3>
+        <p>등록금의 30~100%까지 지원되는 장학금이 있고, 생활비도 많은 가정이 감당할 수 있는 수준입니다.</p>
       </div>
       <div class="why-card">
         <div class="ico ico-gold">💼</div>
-        <h3>Cơ hội việc làm thêm & định hướng nghề nghiệp</h3>
-        <p>Được phép làm thêm theo quy định visa, cơ hội thực tập tại doanh nghiệp Hàn Quốc, Việt Nam.</p>
+        <h3>아르바이트 기회와 진로 설계</h3>
+        <p>비자 규정에 따라 아르바이트가 가능하며, 한국·베트남 기업에서의 인턴십 기회도 열려 있습니다.</p>
       </div>
       <div class="why-card">
         <div class="ico ico-blue">🌏</div>
-        <h3>Văn hóa gần gũi, an toàn</h3>
-        <p>Môi trường sống an toàn, cộng đồng du học sinh Việt Nam đông đảo, dễ hòa nhập.</p>
+        <h3>가까운 문화, 안전한 생활</h3>
+        <p>치안이 좋은 생활 환경과 규모 있는 유학생 커뮤니티 덕분에 적응이 어렵지 않습니다.</p>
       </div>
       <div class="why-card">
         <div class="ico ico-coral">📈</div>
-        <h3>Cơ hội định cư & phát triển lâu dài</h3>
-        <p>Chính sách visa sau tốt nghiệp cởi mở, nhiều lộ trình chuyển đổi visa lao động, định cư.</p>
+        <h3>정착과 장기 성장의 기회</h3>
+        <p>졸업 후 비자 정책이 개방적이고, 취업 비자와 영주권으로 이어지는 경로가 다양합니다.</p>
       </div>
       <div class="why-card">
         <div class="ico ico-gold">🤝</div>
-        <h3>Đồng hành trọn hành trình</h3>
-        <p>KConnect hỗ trợ xuyên suốt từ tư vấn ban đầu đến khi bạn ổn định cuộc sống tại Hàn Quốc.</p>
+        <h3>전 과정을 함께하는 동행</h3>
+        <p>첫 상담부터 한국에서의 생활이 안정될 때까지 KConnect가 끝까지 함께합니다.</p>
       </div>
     </div>
   </div>
@@ -467,45 +467,45 @@
 <section class="services" id="services">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Dịch vụ của chúng tôi</span>
-      <h2>Giải pháp du học trọn gói, minh bạch từng bước</h2>
+      <span class="eyebrow">서비스 안내</span>
+      <h2>단계마다 투명한 한국 유학 원스톱 솔루션</h2>
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <span class="service-num">DỊCH VỤ 01</span>
+        <span class="service-num">SERVICE 01</span>
         <div class="ico ico-blue">🎯</div>
-        <h3>Tư vấn chọn trường & ngành học</h3>
-        <p>Định hướng ngành nghề phù hợp năng lực, sở thích và xu hướng tuyển dụng tại Hàn Quốc.</p>
+        <h3>학교 · 전공 선택 상담</h3>
+        <p>적성과 흥미, 한국의 채용 트렌드까지 함께 고려해 진로 방향을 설계해 드립니다.</p>
       </div>
       <div class="service-card">
-        <span class="service-num">DỊCH VỤ 02</span>
+        <span class="service-num">SERVICE 02</span>
         <div class="ico ico-coral">📄</div>
-        <h3>Hỗ trợ hồ sơ & học bổng</h3>
-        <p>Chuẩn bị hồ sơ học thuật, thư giới thiệu, kế hoạch học tập chuẩn yêu cầu từng trường.</p>
+        <h3>서류 준비 & 장학금 지원</h3>
+        <p>성적 증명 서류, 추천서, 학업계획서를 대학별 요구 사항에 맞춰 준비합니다.</p>
       </div>
       <div class="service-card">
-        <span class="service-num">DỊCH VỤ 03</span>
+        <span class="service-num">SERVICE 03</span>
         <div class="ico ico-gold">🗣️</div>
-        <h3>Luyện thi năng lực tiếng Hàn TOPIK</h3>
-        <p>Lớp học theo lộ trình cá nhân hóa, giáo viên bản ngữ và du học sinh Việt Nam từng trải.</p>
+        <h3>TOPIK 한국어 시험 대비</h3>
+        <p>개인별 로드맵 수업으로, 원어민 교사와 유학을 경험한 선배가 함께 지도합니다.</p>
       </div>
       <div class="service-card">
-        <span class="service-num">DỊCH VỤ 04</span>
+        <span class="service-num">SERVICE 04</span>
         <div class="ico ico-blue">🛂</div>
-        <h3>Hỗ trợ xin visa D-4 / D-2</h3>
-        <p>Chuẩn bị hồ sơ chứng minh tài chính, phỏng vấn thử, theo dõi hồ sơ đến khi có kết quả.</p>
+        <h3>D-4 / D-2 비자 지원</h3>
+        <p>재정 증명 서류 준비와 모의 면접을 진행하고, 결과가 나올 때까지 상황을 관리합니다.</p>
       </div>
       <div class="service-card">
-        <span class="service-num">DỊCH VỤ 05</span>
+        <span class="service-num">SERVICE 05</span>
         <div class="ico ico-coral">🏠</div>
-        <h3>Hỗ trợ chỗ ở & đón sân bay</h3>
-        <p>Kết nối ký túc xá, nhà trọ gần trường, sắp xếp đón sân bay khi bạn vừa đến Hàn Quốc.</p>
+        <h3>숙소 & 공항 픽업 지원</h3>
+        <p>학교 근처 기숙사와 자취방을 연결하고, 입국하는 날 공항 픽업을 준비합니다.</p>
       </div>
       <div class="service-card">
-        <span class="service-num">DỊCH VỤ 06</span>
+        <span class="service-num">SERVICE 06</span>
         <div class="ico ico-gold">🧭</div>
-        <h3>Đồng hành sau khi nhập học</h3>
-        <p>Hỗ trợ hòa nhập, tư vấn việc làm thêm, kết nối cộng đồng du học sinh Việt tại Hàn Quốc.</p>
+        <h3>입학 후에도 계속되는 지원</h3>
+        <p>현지 적응과 아르바이트 상담, 유학생 커뮤니티 연결까지 이어서 도와드립니다.</p>
       </div>
     </div>
   </div>
@@ -514,39 +514,39 @@
 <section class="process" id="process">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Quy trình 6 bước</span>
-      <h2>Hành trình du học rõ ràng, không mơ hồ</h2>
+      <span class="eyebrow">6단계 진행 절차</span>
+      <h2>막연하지 않은, 명확한 유학 로드맵</h2>
     </div>
     <div class="process-track">
       <div class="step">
         <div class="step-num">1</div>
-        <h4>Tư vấn miễn phí</h4>
-        <p>Đánh giá năng lực, mong muốn & tài chính</p>
+        <h4>무료 상담</h4>
+        <p>실력 · 희망 · 예산 진단</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h4>Chọn trường & ngành</h4>
-        <p>Lập danh sách trường phù hợp nhất</p>
+        <h4>학교 · 전공 선정</h4>
+        <p>가장 적합한 지원 학교 선정</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h4>Chuẩn bị hồ sơ</h4>
-        <p>Soạn hồ sơ học thuật & học bổng</p>
+        <h4>서류 준비</h4>
+        <p>학업 서류와 장학금 서류 작성</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <h4>Nộp hồ sơ</h4>
-        <p>Nộp & theo dõi kết quả từ trường</p>
+        <h4>원서 접수</h4>
+        <p>접수 및 합격 결과 관리</p>
       </div>
       <div class="step">
         <div class="step-num">5</div>
-        <h4>Xin visa</h4>
-        <p>Hỗ trợ hồ sơ & phỏng vấn visa</p>
+        <h4>비자 신청</h4>
+        <p>서류 준비와 비자 면접 지원</p>
       </div>
       <div class="step">
         <div class="step-num">6</div>
-        <h4>Lên đường</h4>
-        <p>Đón sân bay & ổn định chỗ ở</p>
+        <h4>출국</h4>
+        <p>공항 픽업 및 숙소 정착</p>
       </div>
     </div>
   </div>
@@ -555,27 +555,27 @@
 <section class="uni" id="universities">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Trường đối tác</span>
-      <h2>Kết nối với các trường đại học uy tín tại Hàn Quốc</h2>
+      <span class="eyebrow">파트너 대학</span>
+      <h2>한국의 우수한 대학들과 연결해 드립니다</h2>
     </div>
     <div class="uni-grid">
-      <div class="uni-card"><div class="uni-mark">SNU</div>Đại học Quốc gia Seoul</div>
-      <div class="uni-card"><div class="uni-mark">YU</div>Đại học Yonsei</div>
-      <div class="uni-card"><div class="uni-mark">KU</div>Đại học Korea</div>
-      <div class="uni-card"><div class="uni-mark">SKKU</div>Đại học Sungkyunkwan</div>
-      <div class="uni-card"><div class="uni-mark">HYU</div>Đại học Hanyang</div>
-      <div class="uni-card"><div class="uni-mark">KHU</div>Đại học Kyung Hee</div>
-      <div class="uni-card"><div class="uni-mark">CAU</div>Đại học Chung-Ang</div>
-      <div class="uni-card"><div class="uni-mark">INHA</div>Đại học Inha</div>
+      <div class="uni-card"><div class="uni-mark">SNU</div>서울대학교</div>
+      <div class="uni-card"><div class="uni-mark">YU</div>연세대학교</div>
+      <div class="uni-card"><div class="uni-mark">KU</div>고려대학교</div>
+      <div class="uni-card"><div class="uni-mark">SKKU</div>성균관대학교</div>
+      <div class="uni-card"><div class="uni-mark">HYU</div>한양대학교</div>
+      <div class="uni-card"><div class="uni-mark">KHU</div>경희대학교</div>
+      <div class="uni-card"><div class="uni-mark">CAU</div>중앙대학교</div>
+      <div class="uni-card"><div class="uni-mark">INHA</div>인하대학교</div>
     </div>
-    <p class="uni-note">* Danh sách trường minh họa — vui lòng cập nhật danh sách trường đối tác thực tế của trung tâm.</p>
+    <p class="uni-note">* 예시로 넣은 목록입니다 — 실제 파트너 대학 목록으로 업데이트해 주세요.</p>
 
     <div class="banner">
       <div>
-        <h3>Săn học bổng du học Hàn Quốc kỳ tháng 3 &amp; tháng 9</h3>
-        <p>Nhận ngay bộ hồ sơ mẫu & danh sách học bổng cập nhật mới nhất khi đăng ký tư vấn trong tháng này.</p>
+        <h3>3월 &amp; 9월 학기 한국 유학 장학금에 도전하세요</h3>
+        <p>이번 달에 상담을 신청하시면 서류 샘플과 최신 장학금 목록을 바로 보내드립니다.</p>
       </div>
-      <a href="#dangky" class="btn btn-primary">Nhận tư vấn ngay</a>
+      <a href="#dangky" class="btn btn-primary">지금 상담받기</a>
     </div>
   </div>
 </section>
@@ -583,32 +583,32 @@
 <section class="testi" id="testimonials">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Học viên nói gì</span>
-      <h2>Hành trình thành công từ những học viên KConnect</h2>
+      <span class="eyebrow">수강생 후기</span>
+      <h2>KConnect 학생들이 만들어낸 합격 스토리</h2>
     </div>
     <div class="testi-grid">
       <div class="testi-card">
         <div class="stars">★★★★★</div>
-        <p class="quote">"Nhờ KConnect hỗ trợ hồ sơ chi tiết, mình đã nhận học bổng 70% ngành Kinh doanh quốc tế tại Đại học Hanyang. Đội ngũ tư vấn rất tận tâm."</p>
+        <p class="quote">"KConnect의 꼼꼼한 서류 지원 덕분에 한양대학교 국제경영학과에 70% 장학금으로 합격했어요. 상담 선생님들이 정말 세심하게 챙겨주셨습니다."</p>
         <div class="testi-person">
           <div class="avatar">TH</div>
-          <div><b>Trần Thu Hà</b><span>Sinh viên ngành Kinh doanh, ĐH Hanyang</span></div>
+          <div><b>쩐 투 하</b><span>한양대학교 경영학과 재학</span></div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars">★★★★★</div>
-        <p class="quote">"Từ lúc chưa biết tiếng Hàn đến khi đậu TOPIK 4 và có visa D-4, cả quá trình chỉ mất 8 tháng nhờ lộ trình rõ ràng của trung tâm."</p>
+        <p class="quote">"한국어를 전혀 모르던 상태에서 TOPIK 4급 합격과 D-4 비자 발급까지 8개월밖에 걸리지 않았어요. 로드맵이 명확했던 덕분입니다."</p>
         <div class="testi-person">
           <div class="avatar">NM</div>
-          <div><b>Nguyễn Văn Minh</b><span>Học viên tiếng Hàn, ĐH Kyung Hee</span></div>
+          <div><b>응우옌 반 민</b><span>경희대학교 한국어 어학당</span></div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars">★★★★★</div>
-        <p class="quote">"Được đón tận sân bay, hỗ trợ tìm nhà trọ ngay tuần đầu tiên. Cảm giác an tâm rất nhiều khi lần đầu xa nhà."</p>
+        <p class="quote">"공항까지 마중 나와 주시고 첫 주에 자취방까지 구해 주셨어요. 처음 집을 떠나는 저에게 정말 큰 안심이 됐습니다."</p>
         <div class="testi-person">
           <div class="avatar">LP</div>
-          <div><b>Lê Phương Anh</b><span>Sinh viên ngành CNTT, ĐH Inha</span></div>
+          <div><b>레 프엉 아인</b><span>인하대학교 IT학과 재학</span></div>
         </div>
       </div>
     </div>
@@ -619,79 +619,79 @@
   <div class="wrap">
     <div class="lead-grid">
       <div>
-        <span class="eyebrow">Đăng ký tư vấn</span>
-        <h2>Để lại thông tin, KConnect liên hệ tư vấn miễn phí trong 24 giờ</h2>
-        <p class="lede">Chỉ mất 30 giây để bắt đầu hành trình du học Hàn Quốc của bạn.</p>
+        <span class="eyebrow">상담 신청</span>
+        <h2>정보를 남겨주시면 24시간 안에 무료로 상담해 드립니다</h2>
+        <p class="lede">한국 유학의 첫걸음, 30초면 충분합니다.</p>
         <div class="lead-points">
           <div class="lead-point">
             <div class="mini-ico">✅</div>
-            <div><b>Tư vấn 1:1 miễn phí</b><p>Không phát sinh chi phí ở bước tư vấn ban đầu</p></div>
+            <div><b>1:1 무료 상담</b><p>초기 상담 단계에서는 어떤 비용도 발생하지 않습니다</p></div>
           </div>
           <div class="lead-point">
             <div class="mini-ico">🔒</div>
-            <div><b>Bảo mật thông tin</b><p>Thông tin của bạn chỉ dùng để liên hệ tư vấn</p></div>
+            <div><b>개인정보 보호</b><p>남겨주신 정보는 상담 연락 용도로만 사용됩니다</p></div>
           </div>
           <div class="lead-point">
             <div class="mini-ico">⏱️</div>
-            <div><b>Phản hồi nhanh</b><p>Đội ngũ tư vấn liên hệ trong vòng 24 giờ</p></div>
+            <div><b>빠른 회신</b><p>상담 담당자가 24시간 이내에 연락드립니다</p></div>
           </div>
         </div>
       </div>
 
       <div class="form-card">
         <form id="leadForm" novalidate>
-          <h3>Đăng ký tư vấn miễn phí</h3>
-          <p>Vui lòng điền đầy đủ thông tin bên dưới</p>
+          <h3>무료 상담 신청</h3>
+          <p>아래 정보를 빠짐없이 입력해 주세요</p>
 
           <div class="field" id="f-name">
-            <label for="name">Họ và tên *</label>
-            <input type="text" id="name" name="name" placeholder="Nguyễn Văn A">
-            <small class="err">Vui lòng nhập họ tên của bạn</small>
+            <label for="name">성함 *</label>
+            <input type="text" id="name" name="name" placeholder="홍길동">
+            <small class="err">성함을 입력해 주세요</small>
           </div>
 
           <div class="field-row">
             <div class="field" id="f-phone">
-              <label for="phone">Số điện thoại *</label>
-              <input type="tel" id="phone" name="phone" placeholder="09xxxxxxxx">
-              <small class="err">Vui lòng nhập số điện thoại hợp lệ</small>
+              <label for="phone">연락처 *</label>
+              <input type="tel" id="phone" name="phone" placeholder="010-1234-5678">
+              <small class="err">올바른 연락처를 입력해 주세요</small>
             </div>
             <div class="field" id="f-email">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="ban@email.com">
-              <small class="err">Email không hợp lệ</small>
+              <label for="email">이메일</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com">
+              <small class="err">이메일 형식이 올바르지 않습니다</small>
             </div>
           </div>
 
           <div class="field" id="f-interest">
-            <label for="interest">Bạn quan tâm đến</label>
+            <label for="interest">관심 있는 과정</label>
             <select id="interest" name="interest">
-              <option value="">-- Chọn chương trình --</option>
-              <option>Luyện thi TOPIK trước khi du học</option>
-              <option>Du học bậc Đại học</option>
-              <option>Du học bậc Thạc sĩ / Tiến sĩ</option>
-              <option>Học bổng du học Hàn Quốc</option>
-              <option>Chưa rõ, cần tư vấn thêm</option>
+              <option value="">-- 과정을 선택해 주세요 --</option>
+              <option>유학 전 TOPIK 대비</option>
+              <option>학부 유학</option>
+              <option>석사 · 박사 유학</option>
+              <option>한국 유학 장학금</option>
+              <option>아직 정하지 못했어요, 상담이 필요합니다</option>
             </select>
           </div>
 
           <div class="field" id="f-note">
-            <label for="note">Ghi chú (không bắt buộc)</label>
-            <textarea id="note" name="note" rows="3" placeholder="Ví dụ: mình muốn du học ngành Quản trị kinh doanh, dự kiến nhập học kỳ tháng 9..."></textarea>
+            <label for="note">남기실 말씀 (선택)</label>
+            <textarea id="note" name="note" rows="3" placeholder="예: 경영학과 지원을 희망하며 9월 학기 입학을 생각하고 있습니다..."></textarea>
           </div>
 
           <label class="consent">
             <input type="checkbox" id="consent" name="consent">
-            <span>Tôi đồng ý để KConnect Education liên hệ tư vấn qua điện thoại/email.</span>
+            <span>KConnect Education이 전화 또는 이메일로 상담 연락하는 것에 동의합니다.</span>
           </label>
 
-          <button type="submit" class="btn btn-primary btn-block">Gửi đăng ký tư vấn</button>
-          <p class="badge-note">* Đây là biểu mẫu minh họa — kết nối với hệ thống CRM/email của bạn để nhận dữ liệu thực tế.</p>
+          <button type="submit" class="btn btn-primary btn-block">상담 신청하기</button>
+          <p class="badge-note">* 예시용 양식입니다 — 실제 데이터를 받으려면 CRM/이메일 시스템과 연동해 주세요.</p>
         </form>
 
         <div class="form-success" id="formSuccess">
           <div class="mini-ico">🎉</div>
-          <h3>Cảm ơn bạn đã đăng ký!</h3>
-          <p>Đội ngũ tư vấn viên của KConnect Education sẽ liên hệ với bạn trong vòng 24 giờ tới. Hẹn gặp lại bạn sớm!</p>
+          <h3>신청해 주셔서 감사합니다!</h3>
+          <p>KConnect Education 상담 담당자가 24시간 이내에 연락드리겠습니다. 곧 만나요!</p>
         </div>
       </div>
     </div>
@@ -701,29 +701,29 @@
 <section class="faq" id="faq">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Câu hỏi thường gặp</span>
-      <h2>Giải đáp thắc mắc về du học Hàn Quốc</h2>
+      <span class="eyebrow">자주 묻는 질문</span>
+      <h2>한국 유학에 대한 궁금증을 풀어드립니다</h2>
     </div>
     <div class="faq-list">
       <div class="faq-item open">
-        <div class="faq-q" onclick="toggleFaq(this)">Chi phí du học Hàn Quốc khoảng bao nhiêu?<span class="plus">+</span></div>
-        <div class="faq-a"><p>Chi phí trung bình dao động 200–350 triệu VNĐ/năm bao gồm học phí và sinh hoạt phí, tùy thành phố và trường học. Có thể giảm đáng kể nếu nhận được học bổng.</p></div>
+        <div class="faq-q" onclick="toggleFaq(this)">한국 유학 비용은 얼마나 드나요?<span class="plus">+</span></div>
+        <div class="faq-a"><p>학비와 생활비를 합쳐 연간 2억~3억 5천만 VND 정도이며, 도시와 학교에 따라 차이가 있습니다. 장학금을 받으면 부담이 크게 줄어듭니다.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Tôi cần trình độ tiếng Hàn như thế nào?<span class="plus">+</span></div>
-        <div class="faq-a"><p>Tùy chương trình, một số trường yêu cầu TOPIK 3–4 trở lên, một số khác nhận hồ sơ chưa có TOPIK và học dự bị tiếng Hàn 1 năm trước khi vào chuyên ngành.</p></div>
+        <div class="faq-q" onclick="toggleFaq(this)">한국어 실력은 어느 정도 필요한가요?<span class="plus">+</span></div>
+        <div class="faq-a"><p>과정에 따라 다릅니다. TOPIK 3~4급 이상을 요구하는 학교도 있고, TOPIK 없이 지원한 뒤 1년간 어학연수를 거쳐 전공 과정에 들어가는 학교도 있습니다.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Có những loại học bổng nào?<span class="plus">+</span></div>
-        <div class="faq-a"><p>Học bổng của trường (30–100% học phí), học bổng chính phủ Hàn Quốc (GKS), và học bổng theo thành tích học tập/TOPIK.</p></div>
+        <div class="faq-q" onclick="toggleFaq(this)">어떤 장학금이 있나요?<span class="plus">+</span></div>
+        <div class="faq-a"><p>대학 자체 장학금(등록금의 30~100%), 한국 정부 초청 장학금(GKS), 그리고 성적이나 TOPIK 등급에 따른 장학금이 있습니다.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Du học sinh có được đi làm thêm không?<span class="plus">+</span></div>
-        <div class="faq-a"><p>Có, sau một thời gian nhập học theo quy định và với sự cho phép của cơ quan xuất nhập cảnh, du học sinh visa D-4/D-2 được phép làm thêm theo số giờ quy định.</p></div>
+        <div class="faq-q" onclick="toggleFaq(this)">유학생도 아르바이트를 할 수 있나요?<span class="plus">+</span></div>
+        <div class="faq-a"><p>가능합니다. 입학 후 일정 기간이 지나고 출입국 당국의 허가를 받으면, D-4/D-2 비자 유학생도 정해진 시간 범위 안에서 아르바이트를 할 수 있습니다.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Thời gian chuẩn bị hồ sơ mất bao lâu?<span class="plus">+</span></div>
-        <div class="faq-a"><p>Trung bình 4–8 tháng tùy chương trình, bao gồm thời gian chuẩn bị hồ sơ học thuật, tài chính và xét duyệt visa.</p></div>
+        <div class="faq-q" onclick="toggleFaq(this)">서류 준비 기간은 얼마나 걸리나요?<span class="plus">+</span></div>
+        <div class="faq-a"><p>학업 서류와 재정 서류 준비, 비자 심사까지 포함해 과정에 따라 평균 4~8개월이 걸립니다.</p></div>
       </div>
     </div>
   </div>
@@ -731,9 +731,9 @@
 
 <div class="cta-strip">
   <div class="cta-inner">
-    <h2>Sẵn sàng bắt đầu hành trình du học Hàn Quốc?</h2>
-    <p>Đăng ký tư vấn miễn phí ngay hôm nay để nhận lộ trình du học phù hợp nhất với bạn.</p>
-    <a href="#dangky" class="btn btn-outline">Đăng ký tư vấn miễn phí</a>
+    <h2>한국 유학, 지금 시작할 준비되셨나요?</h2>
+    <p>오늘 무료 상담을 신청하시고 나에게 꼭 맞는 유학 로드맵을 받아보세요.</p>
+    <a href="#dangky" class="btn btn-outline">무료 상담 신청하기</a>
   </div>
 </div>
 
@@ -742,38 +742,38 @@
     <div class="foot-grid">
       <div>
         <div class="foot-logo"><span class="logo-badge">KC</span>KConnect Education</div>
-        <p>Trung tâm tư vấn du học Hàn Quốc uy tín, đồng hành cùng học sinh, sinh viên Việt Nam trên hành trình chinh phục ước mơ du học.</p>
+        <p>학생들의 한국 유학 꿈을 함께 이루어가는, 믿을 수 있는 유학 컨설팅 센터입니다.</p>
       </div>
       <div class="fcol">
-        <h5>Liên kết nhanh</h5>
+        <h5>바로가기</h5>
         <ul>
-          <li><a href="#why">Vì sao Hàn Quốc</a></li>
-          <li><a href="#services">Dịch vụ</a></li>
-          <li><a href="#process">Quy trình</a></li>
-          <li><a href="#universities">Trường đối tác</a></li>
+          <li><a href="#why">왜 한국인가</a></li>
+          <li><a href="#services">서비스</a></li>
+          <li><a href="#process">진행 절차</a></li>
+          <li><a href="#universities">파트너 대학</a></li>
         </ul>
       </div>
       <div class="fcol">
-        <h5>Chương trình</h5>
+        <h5>과정 안내</h5>
         <ul>
-          <li><a href="#dangky">Luyện thi TOPIK</a></li>
-          <li><a href="#dangky">Du học Đại học</a></li>
-          <li><a href="#dangky">Du học Thạc sĩ</a></li>
-          <li><a href="#dangky">Học bổng GKS</a></li>
+          <li><a href="#dangky">TOPIK 대비반</a></li>
+          <li><a href="#dangky">학부 유학</a></li>
+          <li><a href="#dangky">석사 유학</a></li>
+          <li><a href="#dangky">GKS 장학금</a></li>
         </ul>
       </div>
       <div class="fcol">
-        <h5>Liên hệ</h5>
+        <h5>문의</h5>
         <ul class="foot-contact">
-          <li>📍 123 Đường ABC, Quận 1, TP. Hồ Chí Minh</li>
-          <li>📞 1900 0000 (miễn phí)</li>
+          <li>📍 호치민시 1군 ABC로 123</li>
+          <li>📞 1900 0000 (무료)</li>
           <li>✉️ tuvan@kconnect-edu.vn</li>
-          <li>🕐 Thứ 2 – Thứ 7, 8:30 – 18:00</li>
+          <li>🕐 월요일 – 토요일, 08:30 – 18:00</li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 KConnect Education. Đây là trang mẫu minh họa — vui lòng cập nhật thông tin công ty thực tế.</span>
+      <span>© 2026 KConnect Education. 예시용 샘플 페이지입니다 — 실제 회사 정보로 업데이트해 주세요.</span>
       <div class="foot-social">
         <a href="#" aria-label="Facebook">f</a>
         <a href="#" aria-label="Zalo">Z</a>
